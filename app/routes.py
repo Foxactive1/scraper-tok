@@ -110,5 +110,6 @@ def not_found(e):
 
 @api.errorhandler(500)
 def internal_error(e):
-    logger.error(f"[routes] Erro interno: {e}")
-    return jsonify({"error": "Erro interno do servidor"}), 500
+    msg = str(e)
+    logger.error(f"[routes] Erro interno: {msg}")
+    return jsonify({"error": f"Erro interno: {msg}"}), 500
