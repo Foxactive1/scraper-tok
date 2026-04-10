@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Scraper Pro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #0d0d0d; }
+        .card { border-radius: 12px; }
+        footer {
+            border-top: 1px solid #2a2a2a;
+            background: #0d0d0d;
+        }
+        footer a { text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .footer-logo {
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
+        .footer-logo span { color: #ffc107; }
+    </style>
+</head>
+<body class="bg-dark text-light">
 
+<div class="container py-5" style="max-width: 540px;">
+    <h1 class="text-center mb-4 fw-bold">🚀 TikTok Scraper Pro</h1>
+
+    <div class="card p-4 shadow-lg bg-secondary mb-3">
+        <div class="mb-3">
+            <label class="form-label fw-semibold">URL do TikTok</label>
+            <input type="text" id="url" class="form-control form-control-lg bg-dark text-light border-secondary"
+                   placeholder="https://vt.tiktok.com/...">
+        </div>
+        <button id="btnScrape" class="btn btn-warning btn-lg w-100 fw-bold" onclick="startScraping()">
+            🔍 Extrair Dados
+        </button>
+    </div>
+
+    <div id="status" class="mb-3"></div>
+    <div id="result"></div>
+    <div id="downloadArea"></div>
+</div>
+
+<footer class="mt-auto py-4 text-center text-muted">
+    <div class="container" style="max-width: 540px;">
+        <p class="footer-logo mb-1">
+            Innova<span>Ideia</span>
+        </p>
+        <p class="mb-1" style="font-size: .82rem;">
+            Consultoria · Desenvolvimento de Software · Treinamentos
+        </p>
+        <p class="mb-2" style="font-size: .8rem;">
+            <a href="mailto:innovaideia2023@gmail.com" class="text-warning">
+                innovaideia2023@gmail.com
+            </a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/Foxactive1" target="_blank" rel="noopener noreferrer" class="text-secondary">
+                GitHub
+            </a>
+            &nbsp;·&nbsp;
+            <a href="https://www.linkedin.com/in/dione-castro-alves" target="_blank" rel="noopener noreferrer" class="text-secondary">
+                LinkedIn
+            </a>
+        </p>
+        <p class="mb-0" style="font-size: .75rem; color: #444;">
+            &copy; 2025 InNovaIdeia · Franca, SP · Brasil
+        </p>
+    </div>
+</footer>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
